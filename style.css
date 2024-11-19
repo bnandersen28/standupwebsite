@@ -1,3 +1,52 @@
 html{
     background-color: orange;
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.stick-logo{
+    margin-top: 5px;
+    width: 40px;
+    height: auto;
+}
+
+.rainbow-text span:nth-child(1), 
+    span:nth-child(10), span:nth-child(14),
+    span:nth-child(18), span:nth-child(26){
+        color: yellow; 
+    }
+
+.rainbow-text span:nth-child(2),span:nth-child(15),
+    span:nth-child(8), span:nth-child(19), span:nth-child(23){
+        color: purple;
+    }
+
+.rainbow-text span:nth-child(3), span:nth-child(9),
+    span:nth-child(22), span:nth-child(16), span:nth-child(28){
+        color: rgb(208, 98, 2); 
+
+    }
+
+.rainbow-text span:nth-child(4), span:nth-child(11),span:nth-child(7),
+    span:nth-child(21), span:nth-child(17), span:nth-child(27){
+        color: red; 
+    }   
+
+.rainbow-text span:nth-child(5), span:nth-child(12),
+    span:nth-child(20), span:nth-child(25){
+        color: blue;
+    }
+.rainbow-text span:nth-child(6), span:nth-child(13),
+    span:nth-child(24){
+        color: green;
+    }
+
+.rainbow-text{
+    font-family: 'Baloo 2', cursive;
+    font-size: .5em;
+}
