@@ -1,6 +1,7 @@
 
 body{
     margin: 0;
+    overflow-x: hidden; /* Disable horizontal scrolling */
     overflow-y: auto;
 }
 
@@ -18,10 +19,21 @@ header{
 }
 
 .home-img{
-    width: 120px;
-    height: 25%;
-    object-fit: contain;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
 }
+
+.home-img img {
+    width: auto;
+    height: auto; /* Set a specific height to make the image smaller */
+    max-width: 100%; /* Ensure the image does not exceed the container's width */
+    max-height: 100%;
+    object-fit: contain; /* Ensure the image maintains its aspect ratio and is fully visible */
+  }
 
 .stick-logo{
     margin-top: 5px;
