@@ -1,17 +1,24 @@
-html{
-    background-color: orange;
-}
 
 body{
+    margin: 0;
+}
+
+header{
+    height: 25vh;
+}
+
+.header-top{
+    background-color: rgb(235, 229, 229);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
+    justify-content: center;
+    height: 70%;
 }
 
 .stick-logo{
     margin-top: 5px;
-    width: 40px;
+    width: 60px;
     height: auto;
 }
 
@@ -49,4 +56,36 @@ body{
 .rainbow-text{
     font-family: 'Baloo 2', cursive;
     font-size: .5em;
+}
+
+.navbar{
+    background-color: yellow;
+    height: 30%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .5em;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul{
+    list-style: none;
+    padding: 0;
+    margin : 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navbar li{
+    margin: 0 15px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Baloo 2', cursive;
+    font-weight: bold;
 }
