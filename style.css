@@ -9,7 +9,7 @@ header{
 }
 
 .header-top{
-    background-color: rgb(246, 245, 245);
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,8 +18,9 @@ header{
 }
 
 .home-img{
-    width: 10vh;
-    height: auto;
+    width: 120px;
+    height: 25%;
+    object-fit: contain;
 }
 
 .stick-logo{
@@ -61,7 +62,7 @@ header{
 
 .rainbow-text{
     font-family: 'Baloo 2', cursive;
-    font-size: .75em;
+    font-size: .85em;
 }
 
 .navbar{
@@ -94,4 +95,8 @@ header{
     color: black;
     font-family: 'Baloo 2', cursive;
     font-weight: bold;
+}
+
+.content{
+    padding: 20px;
 }
