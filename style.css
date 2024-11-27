@@ -20,7 +20,7 @@ header{
 
 .home-img{
     width: 100%;
-    height: 60%;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,7 @@ header{
 
 .stick-logo{
     margin-top: 5px;
-    width: 90px;
+    width: 100px;
     height: auto;
 }
 
@@ -108,6 +108,7 @@ header{
     color: black;
     font-family: 'Baloo 2', cursive;
     font-weight: bold;
+    font-size: 1.5em;
 }
 
 .blue-middle-bar{
@@ -141,6 +142,7 @@ header{
 
 .about{
     background-color: rgb(233, 104, 240);
+    font-family: 'Arial',sans-serif;
 }
 
 .story-time{
