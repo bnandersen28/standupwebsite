@@ -38,7 +38,7 @@ header{
 
 .stick-logo{
     margin-top: 5px;
-    width: 80px;
+    width: 90px;
     height: auto;
 }
 
@@ -75,7 +75,7 @@ header{
 
 .rainbow-text{
     font-family: 'Baloo 2', cursive;
-    font-size: .9em;
+    font-size: 1em;
 }
 
 .navbar{
