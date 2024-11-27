@@ -112,6 +112,7 @@ header{
 
 .blue-middle-bar{
     background-color: lightblue;
+    height: 10%;
     align-items: center;
     display: flex;
     flex-direction: row;
