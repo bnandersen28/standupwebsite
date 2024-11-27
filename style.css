@@ -30,9 +30,9 @@ header{
 
 .home-img img {
     width: auto;
-    height: 50%; /* Set a specific height to make the image smaller */
+    height: 5%; /* Set a specific height to make the image smaller */
     max-width: 100%; /* Ensure the image does not exceed the container's width */
-    max-height: 75%;
+    max-height: 65%;
     object-fit: contain; /* Ensure the image maintains its aspect ratio and is fully visible */
   }
 
@@ -113,7 +113,7 @@ header{
 
 .blue-middle-bar{
     background-color: lightblue;
-    height: 10%;
+    height: 100px;
     align-items: center;
     display: flex;
     flex-direction: row;
