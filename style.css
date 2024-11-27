@@ -29,9 +29,9 @@ header{
 
 .home-img img {
     width: auto;
-    height: 75%; /* Set a specific height to make the image smaller */
+    height: 65%; /* Set a specific height to make the image smaller */
     max-width: 100%; /* Ensure the image does not exceed the container's width */
-    max-height: 100%;
+    max-height: 75%;
     object-fit: contain; /* Ensure the image maintains its aspect ratio and is fully visible */
   }
 
@@ -114,8 +114,11 @@ header{
     align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border: 1px solid #ccc;
+    border-radius: 10px;
 
 }
 .icon-text{
@@ -133,3 +136,39 @@ header{
     height: 40px;
     margin-top: 10px;
 }
+
+.about{
+    background-color: rgb(233, 104, 240);
+}
+
+.story-time{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 400px;
+}
+
+.story-time-img{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-time-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.text-left, .text-right{
+    width: 33.3%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
