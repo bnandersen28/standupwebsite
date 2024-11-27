@@ -6,11 +6,11 @@ body{
 }
 
 header{
-    height: 35vh;
+    height: 45vh;
 }
 
 .header-top{
-    background-color: white;
+    background-color: rgb(249, 249, 249);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@ header{
 
 .home-img img {
     width: auto;
-    height: auto; /* Set a specific height to make the image smaller */
+    height: 75%; /* Set a specific height to make the image smaller */
     max-width: 100%; /* Ensure the image does not exceed the container's width */
     max-height: 100%;
     object-fit: contain; /* Ensure the image maintains its aspect ratio and is fully visible */
@@ -44,7 +44,7 @@ header{
 .rainbow-text span:nth-child(1), 
     span:nth-child(10), span:nth-child(14),
     span:nth-child(18), span:nth-child(26){
-        color: rgb(235, 235, 28); 
+        color: rgb(253, 129, 13); 
     }
 
 .rainbow-text span:nth-child(2),span:nth-child(15),
@@ -74,7 +74,7 @@ header{
 
 .rainbow-text{
     font-family: 'Baloo 2', cursive;
-    font-size: .85em;
+    font-size: .9em;
 }
 
 .navbar{
@@ -109,6 +109,27 @@ header{
     font-weight: bold;
 }
 
-.content{
-    padding: 20px;
+.blue-middle-bar{
+    background-color: lightblue;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px 0;
+
+}
+.icon-text{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Baloo 2', cursive;
+    font-size: .85em;
+
+}
+
+.icon-text img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
 }
