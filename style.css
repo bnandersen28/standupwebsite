@@ -182,16 +182,15 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: relative;
 }
 
 .footer-section{
-    flex: 1;
+    flex: 2;
     text-align: center;
 }
 
 .footer-divider{
-    width: 20px;
+    width: 60px;
     height: 100%;
     background-color: white;
     margin: 0 10px;
