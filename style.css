@@ -182,6 +182,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    height: 100px;
 }
 
 .footer-section{
@@ -190,8 +191,8 @@ header{
 }
 
 .footer-divider{
-    width: 60px;
-    height: 100%;
+    width: 5px;
+    height: 100px;
     background-color: white;
     margin: 0 10px;
 }
