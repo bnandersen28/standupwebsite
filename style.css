@@ -29,11 +29,11 @@ header{
 
 .home-img img {
     width: auto;
-    height: 60%; /* Set a specific height to make the image smaller */
+    height: 20%; /* Set a specific height to make the image smaller */
     max-width: 100%; /* Ensure the image does not exceed the container's width */
-    max-height: 65%;
+    max-height: 35%;
     object-fit: contain; /* Ensure the image maintains its aspect ratio and is fully visible */
-    border: 5px sold #ccc;
+    border: 5px solid #ccc;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
@@ -81,7 +81,7 @@ header{
 
 .navbar{
     background-color: yellow;
-    height: 40px;
+    height: 30%;
     display:flex;
     align-items: center;
     justify-content: center;
