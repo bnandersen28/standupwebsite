@@ -15,7 +15,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70%;
+    height: 300px;
 }
 
 .home-img{
@@ -38,8 +38,8 @@ header{
 
 .stick-logo{
     margin-top: 5px;
-    width: 200px;
-    height: 100px;
+    width: 240px;
+    height: 150px;
 }
 
 .rainbow-text span:nth-child(1), 
@@ -75,12 +75,12 @@ header{
 
 .rainbow-text{
     font-family: 'Baloo 2', cursive;
-    font-size: 1.32em;
+    font-size: 2em;
 }
 
 .navbar{
     background-color: yellow;
-    height: 30%;
+    height: 150px;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -108,7 +108,7 @@ header{
     color: black;
     font-family: 'Baloo 2', cursive;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .blue-middle-bar{
