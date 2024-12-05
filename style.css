@@ -76,6 +76,7 @@ header{
 .rainbow-text{
     font-family: 'Baloo 2', cursive;
     font-size: 2em;
+    text-align: center;
 }
 
 .navbar{
@@ -145,10 +146,16 @@ header{
     font-family: 'Arial',sans-serif;
 }
 
+.about-page{
+    background-color: rgb(251, 181, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: .5em;
+
+}
+
 .grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap : 2px; 
+    grid-template-columns: 1fr 1fr; 
 }
 
 .grid-item{
@@ -156,10 +163,11 @@ header{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-size: .5em;
 }
 
 .grid-item img{
-    width: 50%;
+    width: 100%;
     height: 200px;
     object-fit: cover;
 }
