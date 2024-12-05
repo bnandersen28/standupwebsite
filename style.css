@@ -6,7 +6,7 @@ body{
 }
 
 header{
-    height: 30vh;
+   height : auto;
 }
 
 .header-top{
@@ -80,7 +80,7 @@ header{
 
 .navbar{
     background-color: yellow;
-    height: 20%;
+    height: 30%;
     display:flex;
     align-items: center;
     justify-content: center;
