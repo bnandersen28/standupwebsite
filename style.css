@@ -23,7 +23,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background: linear-gradient(rgba(81, 255, 127, 0.5), rgba(215, 255, 142, 0.5));
 }
 
 
