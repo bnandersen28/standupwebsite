@@ -28,7 +28,7 @@ header{
 
 
 .home-img img {
-    width: auto;
+    width: 100%;
     height: auto;
     max-height: 62vh; /* Set a specific height to make the image smaller */
     object-fit: contain;
