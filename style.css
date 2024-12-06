@@ -19,7 +19,7 @@ header{
 }
 
 .home-img{
-    object-fit: contain;
+    object-fit: cover;
     display: flex;
     justify-content: center;
     align-items: center;
