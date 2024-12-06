@@ -160,8 +160,8 @@ h1{
 }
 
 .about-page-top img{
-    width: 25%;
-    height: 25%;
+    width: 15vh;
+    height: auto;
     object-fit: contain;
 }
 
@@ -174,8 +174,8 @@ h1{
 }
 
 .about-page-two img{
-    width: 25%;
-    height: 25%;
+    width: 15vh;
+    height: auto;
     object-fit: contain;
 }
 
@@ -188,8 +188,8 @@ h1{
 }
 
 .about-page-three img{
-    width: 25%;
-    height: 25%;
+    width: 15vh;
+    height: auto;
     object-fit: contain;
 }
 
