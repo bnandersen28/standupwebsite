@@ -287,7 +287,7 @@ left
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: auto auto;
+    grid-template-columns: 2fr 1fr;
     background: linear-gradient(rgba(255, 146, 73, 0.765), rgba(227, 131, 13, 0.5));
     height: 40vh;
     width: 100%;
@@ -309,7 +309,7 @@ left
 }
 
 .story-hour-outer img{
-    width:20vh;
+    width:30vh;
     height: auto;
     object-fit: cover;
 }
@@ -318,7 +318,7 @@ left
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 2fr;
     background: linear-gradient(rgba(254, 246, 13, 0.773), rgba(253, 250, 55, 0.579));
     height: 40vh;
     width: 100%;
@@ -336,7 +336,7 @@ left
 }
 
 .pupper-outer img{
-    width: 20vh;
+    width: 10vh;
     height: auto;
     object-fit: cover;
 }
