@@ -159,6 +159,10 @@ h1{
     flex-direction: row;
 }
 
+.about-page-header{
+    font-size: 2em;
+}
+
 .about-page-top img{
     width: 15vh;
     height: auto;
@@ -206,11 +210,6 @@ h1{
     font-size: 1em;
 }
 
-.grid-item img{
-    width: auto;
-    height: auto;
-    object-fit: cover;
-}
 
 
 .story-time{
