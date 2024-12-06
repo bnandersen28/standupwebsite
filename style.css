@@ -9,18 +9,13 @@ header{
    height : auto;
 }
 
-.header-outer{
-    background-color: rgba(254, 20, 20, 0.819);
+.header-top{
+    background-color: rgb(249, 249, 249);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100px;
-}
-
-.header-inner{
-    background-color: white;
-    text-align: center;
 }
 
 .home-img{
@@ -81,7 +76,7 @@ header{
 
 .rainbow-text{
     font-family: 'Baloo 2', cursive;
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -115,7 +110,7 @@ header{
     color: black;
     font-family: 'Baloo 2', cursive;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .blue-middle-bar{
