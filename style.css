@@ -167,6 +167,7 @@ h1{
     font-weight: bold;
     height: 10vh;
     background-color: rgba(254, 151, 83, 0.791);
+    padding-top: 20px;
 }
 
 .about-page-top img{
@@ -277,6 +278,37 @@ h1{
     height: 100px;
     background-color: white;
     margin: 0 10px;
+}
+
+/*grid container so that picture is on right and words on
+left
+*/
+.story-hour-outer{
+    display: grid;
+    grid-template-rows: auto;
+    background: linear-gradient(rgba(254, 110, 13, 0.83), rgba(227, 131, 13, 0.5));
+    height: 30vh;
+    width: 100%;
+}
+
+.story-hour-words{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-family: 'Baloo 2', cursive;
+}
+
+.story-hour-header{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.story-hour-outer img{
+    width: 50vh;
+    height: auto;
+    object-fit: contain;
 }
 
 
