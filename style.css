@@ -309,7 +309,7 @@ left
 }
 
 .story-hour-outer img{
-    width:30vh;
+    width:auto;
     height: auto;
     object-fit: cover;
 }
@@ -335,7 +335,7 @@ left
     margin-right: 20px;
 }
 
-.pupper-outer img{
+.puppet-outer img{
     width: 10vh;
     height: auto;
     object-fit: cover;
