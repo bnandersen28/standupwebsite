@@ -148,7 +148,7 @@ header{
 }
 
 .about-page-top{
-    background: linear-gradient(rgba(254, 110, 13, 0.83), rgba(227, 131, 13, 0.5));
+    background: linear-gradient(rgba(254, 151, 83, 0.791), rgba(227, 131, 13, 0.5));
     font-family: 'Baloo 2', cursive;
     font-size: 1em;
     display: flex;
