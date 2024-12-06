@@ -32,7 +32,7 @@ header{
     height: auto;
     max-height: 60vh; /* Set a specific height to make the image smaller */
     max-width: 90%; /* Ensure the image does not exceed the container's width */
-    object-fit: cover;
+    object-fit: contain;
     border: 5px solid #ccc;
     background-position: center top;
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
