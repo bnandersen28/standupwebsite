@@ -148,8 +148,8 @@ header{
 }
 
 .about-page{
-    background-color: rgb(251, 181, 255);
-    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(rgba(254, 246, 13, 0.773), rgba(253, 250, 55, 0.579));
+    font-family: 'Baloo 2', cursive;
     font-size: 1em;
 
 }
