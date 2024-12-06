@@ -114,7 +114,7 @@ header{
 }
 
 .blue-middle-bar{
-    background-color: rgba(255, 250, 101, 0.853);
+    background-color: rgba(255, 251, 136, 0.853);
     height: 175px;
     align-items: center;
     display: flex;
@@ -143,8 +143,8 @@ header{
 }
 
 .about{
-    background-color: rgba(44, 128, 2, 0.573);
-    font-family: 'Arial',sans-serif;
+    background-color: rgba(153, 255, 102, 0.573);
+    font-family: 'Baloo 2', cursive;
 }
 
 .about-page{
