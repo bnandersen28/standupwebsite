@@ -19,7 +19,8 @@ header{
 }
 
 .home-img{
-    width: 100%;
+    width: auto;
+    object-fit: cover;
     display: flex;
     justify-content: center;
     align-items: center;
