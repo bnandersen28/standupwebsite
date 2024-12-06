@@ -150,7 +150,7 @@ header{
 .about-page{
     background: linear-gradient(rgba(254, 246, 13, 0.773), rgba(253, 250, 55, 0.579));
     font-family: 'Baloo 2', cursive;
-    font-size: 1em;
+    font-size: 1.5em;
 
 }
 
@@ -164,18 +164,15 @@ header{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: .5em;
+    font-size: 1em;
 }
 
 .grid-item img{
-    width: 100%;
-    height: 200px;
+    width: auto;
+    height: auto;
     object-fit: cover;
 }
 
-.bold{
-    font-weight: bold;
-}
 
 .story-time{
     display: flex;
