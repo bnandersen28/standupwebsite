@@ -167,6 +167,10 @@ header{
     font-size: 1em;
 }
 
+.grid-container{
+    display: flex;
+    flex-direction: row;
+}
 
 .grid-item{
     display : flex;
