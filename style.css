@@ -402,5 +402,35 @@ left
     object-fit: contain;
 }
 
+.involve-outer-two{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr;
+    background: linear-gradient(rgba(254, 246, 13, 0.773), rgba(253, 250, 55, 0.579));
+    height: auto;
+    width: 100%;
+}
+
+.involve-words-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    font-family: 'Baloo 2', cursive;
+    margin-right: 20px;
+}
+
+.involve-outer-two img{
+    width: 30vh;
+    height: auto;
+    margin-left: 40px;
+    object-fit: cover;
+    align-items: center;
+}
+
+
+
 
 
