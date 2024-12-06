@@ -155,7 +155,7 @@ h1{
     font-family: 'Baloo 2', cursive;
     font-size: 1em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .about-page-two{
@@ -163,7 +163,7 @@ h1{
     font-family: 'Baloo 2', cursive;
     font-size: 1em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .about-page-three{
@@ -171,7 +171,7 @@ h1{
     font-family: 'Baloo 2', cursive;
     font-size: .5em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .about-page-three img{
@@ -181,8 +181,8 @@ h1{
 }
 
 .grid-container{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-rows: auto;
 }
 
 .grid-item{
