@@ -154,17 +154,18 @@ h1{
 .about-page-top{
     background-color: rgba(254, 151, 83, 0.791);
     font-family: 'Baloo 2', cursive;
-    font-size: 1.5em;
+    font-size: 1em;
     display: flex;
     flex-direction: row;
-    height: 25vh;
+    height: 30vh;
     width: 100%;
 }
 
 .about-page-header{
     font-size: 2em;
     font-family: 'Baloo 2', cursive;
-    height: 15vh;
+    font-weight: bold;
+    height: 10vh;
     background-color: rgba(254, 151, 83, 0.791);
 }
 
