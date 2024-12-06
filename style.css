@@ -289,7 +289,7 @@ left
     justify-content: center;
     grid-template-columns: 2fr 1fr;
     background: linear-gradient(rgba(255, 146, 73, 0.765), rgba(227, 131, 13, 0.5));
-    height: 40vh;
+    height: auto;
     width: 100%;
 }
 
@@ -320,7 +320,7 @@ left
     justify-content: center;
     grid-template-columns: 1fr 2fr;
     background: linear-gradient(rgba(254, 246, 13, 0.773), rgba(253, 250, 55, 0.579));
-    height: 40vh;
+    height: auto;
     width: 100%;
     
 }
@@ -336,8 +336,9 @@ left
 }
 
 .puppet-outer img{
-    width: 15vh;
+    width: 20vh;
     height: auto;
+    margin-left: 20px;
     object-fit: cover;
     align-items: center;
 }
