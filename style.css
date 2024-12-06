@@ -142,6 +142,9 @@ header{
     margin-top: 10px;
 }
 
+h1{
+    align-items: center;
+}
 .about{
     background-color: rgba(153, 255, 102, 0.573);
     font-family: 'Baloo 2', cursive;
@@ -152,6 +155,7 @@ header{
     font-family: 'Baloo 2', cursive;
     font-size: 1em;
     display: flex;
+    flex-direction: row;
 }
 
 .about-page-two{
@@ -159,12 +163,21 @@ header{
     font-family: 'Baloo 2', cursive;
     font-size: 1em;
     display: flex;
+    flex-direction: row;
 }
 
 .about-page-three{
     background: linear-gradient(rgba(83, 255, 80, 0.813), rgba(153, 255, 94, 0.5));
     font-family: 'Baloo 2', cursive;
-    font-size: 1em;
+    font-size: .5em;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-page-three img{
+    width: auto;
+    height: auto;
+    object-fit: cover;
 }
 
 .grid-container{
