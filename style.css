@@ -23,14 +23,14 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(81, 255, 127, 0.5), rgba(215, 255, 142, 0.5));
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(7, 11, 1, 0.5));
 }
 
 
 .home-img img {
-    width: 100%;
+    width: auto;
     height: auto;
-    max-height: 60vh; /* Set a specific height to make the image smaller */
+    max-height: 62vh; /* Set a specific height to make the image smaller */
     object-fit: contain;
     flex-direction: row;
     background-position: center top;
