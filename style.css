@@ -144,6 +144,7 @@ header{
 
 h1{
     align-items: center;
+    font-size: 2em;
 }
 .about{
     background-color: rgba(153, 255, 102, 0.573);
@@ -155,7 +156,13 @@ h1{
     font-family: 'Baloo 2', cursive;
     font-size: 1em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.about-page-top img{
+    width: 25%;
+    height: 25%;
+    object-fit: contain;
 }
 
 .about-page-two{
@@ -164,6 +171,12 @@ h1{
     font-size: 1em;
     display: flex;
     flex-direction: column;
+}
+
+.about-page-two img{
+    width: 25%;
+    height: 25%;
+    object-fit: contain;
 }
 
 .about-page-three{
@@ -175,9 +188,9 @@ h1{
 }
 
 .about-page-three img{
-    width: auto;
-    height: auto;
-    object-fit: cover;
+    width: 25%;
+    height: 25%;
+    object-fit: contain;
 }
 
 .grid-container{
