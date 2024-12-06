@@ -147,21 +147,33 @@ header{
     font-family: 'Baloo 2', cursive;
 }
 
-.about-page{
+.about-page-top{
+    background: linear-gradient(rgba(254, 110, 13, 0.83), rgba(227, 131, 13, 0.5));
+    font-family: 'Baloo 2', cursive;
+    font-size: 1em;
+    display: flex;
+}
+
+.about-page-two{
     background: linear-gradient(rgba(254, 246, 13, 0.773), rgba(253, 250, 55, 0.579));
     font-family: 'Baloo 2', cursive;
-    font-size: 1.5em;
+    font-size: 1em;
+}
 
+.about-page-three{
+    background: linear-gradient(rgba(83, 255, 80, 0.813), rgba(153, 255, 94, 0.5));
+    font-family: 'Baloo 2', cursive;
+    font-size: 1em;
 }
 
 .grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
 }
 
 .grid-item{
     display : flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
     font-size: 1em;
