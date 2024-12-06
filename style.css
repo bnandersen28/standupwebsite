@@ -308,22 +308,33 @@ left
 }
 
 .story-hour-outer img{
-    width: 50vh;
+    width: auto;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
 }
 
-.puppet-one{
-    display:flex;
-    flex-direction: column;
+.puppet-outer{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
     background: linear-gradient(rgba(254, 246, 13, 0.773), rgba(253, 250, 55, 0.579));
+    height: 40vh;
+    width: 100%;
+    
+}
+
+.puppet-words{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     font-size: 1em;
     font-family: 'Baloo 2', cursive;
-    height: 30vh;
 }
 
-.puppet-inner{
-    display: flex; 
-    flex-direction: row;
+.pupper-outer img{
+    width: auto;
+    height: auto;
+    object-fit: cover;
 }
