@@ -158,6 +158,7 @@ header{
     background: linear-gradient(rgba(254, 246, 13, 0.773), rgba(253, 250, 55, 0.579));
     font-family: 'Baloo 2', cursive;
     font-size: 1em;
+    display: flex;
 }
 
 .about-page-three{
@@ -166,10 +167,6 @@ header{
     font-size: 1em;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr; 
-}
 
 .grid-item{
     display : flex;
