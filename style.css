@@ -9,13 +9,18 @@ header{
    height : auto;
 }
 
-.header-top{
-    background-color: rgb(249, 249, 249);
+.header-outer{
+    background-color: rgba(254, 20, 20, 0.819);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100px;
+}
+
+.header-inner{
+    background-color: white;
+    text-align: center;
 }
 
 .home-img{
