@@ -157,10 +157,14 @@ h1{
     font-size: 1.5em;
     display: flex;
     flex-direction: row;
+    height: 30%;
+    width: 100%;
 }
 
 .about-page-header{
     font-size: 2em;
+    font-family: 'Baloo 2', cursive;
+    height: 30%;
     background: linear-gradient(rgba(254, 151, 83, 0.791), rgba(227, 131, 13, 0.5));
 }
 
