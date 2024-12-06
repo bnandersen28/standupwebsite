@@ -30,6 +30,8 @@ header{
 
 .home-img img {
     width: auto;
+    display: flex;
+    align-items: center;
     max-height: 60%;
     height: 60vh; /* Set a specific height to make the image smaller */
     max-width: 90%; /* Ensure the image does not exceed the container's width */
