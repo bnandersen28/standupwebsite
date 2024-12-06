@@ -185,8 +185,8 @@ header{
 }
 
 .story-time-img{
-    width: 75%;
-    height: 100%;
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
