@@ -15,7 +15,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: .3vh;
 }
 
 .home-img{
@@ -244,7 +244,7 @@ h1{
 .story-time-img img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     
 }
 
