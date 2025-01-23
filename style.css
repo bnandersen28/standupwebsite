@@ -195,7 +195,7 @@ h1{
 }
 
 .about-page-three{
-    background: linear-gradient(rgba(83, 255, 80, 0.813), rgba(153, 255, 94, 0.5));
+    background: linear-gradient(rgba(255, 80, 214, 0.813), rgba(255, 94, 252, 0.674));
     font-family: 'Baloo 2', cursive;
     font-size: 1.5em;
     display: flex;
@@ -259,7 +259,7 @@ h1{
 
 
 .footer{
-    background-color: rgba(119, 173, 255, 0.912);
+    background-color: rgba(187, 119, 255, 0.912);
     color: rgb(24, 2, 2);
     display: flex;
     justify-content: space-between;
