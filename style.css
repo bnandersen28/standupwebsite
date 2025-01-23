@@ -39,8 +39,8 @@ header{
 
 .stick-logo{
     margin-top: 5px;
-    width: 10em;
-    height: 10em;
+    width: 12em;
+    height: 12em;
 }
 
 .rainbow-text span:nth-child(1), 
@@ -81,7 +81,7 @@ header{
 }
 
 .navbar{
-    background-color: rgba(254, 20, 20, 0.819);
+    background-color: rgba(255, 74, 74, 0.819);
     height: 75px;
     display:flex;
     align-items: center;
