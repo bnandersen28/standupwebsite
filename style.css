@@ -39,8 +39,8 @@ header{
 
 .stick-logo{
     margin-top: 5px;
-    width: auto;
-    height: auto;
+    width: .05em;
+    height: .05em;
 }
 
 .rainbow-text span:nth-child(1), 
