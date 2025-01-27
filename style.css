@@ -463,8 +463,7 @@ left
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    height: 60vh;
+    height: 70vh;
     flex-direction: column;   
   }
   .text-box {
