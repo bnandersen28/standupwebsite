@@ -465,7 +465,7 @@ left
     align-items: center;
     height: calc(100vh - 30vh - 100px);
     flex-grow: 1;
-    background-color: linear-gradient(rgba(255, 80, 214, 0.813), rgba(255, 94, 252, 0.674));
+    background: linear-gradient(rgba(255, 80, 214, 0.813), rgba(255, 94, 252, 0.674));
     flex-direction: column;   
   }
   .text-box {
