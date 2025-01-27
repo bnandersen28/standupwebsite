@@ -461,20 +461,20 @@ left
 /*Make home page text boxes interactive*/
 .text-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px;
+    height: 60vh;
+    flex-direction: column;   
   }
   .text-box {
-    flex: 1;
-    display: none;
-    transition: opacity 0.3s ease;
+    width: 80%;
+    margin: 20px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 80, 214, 0.813), rgba(255, 94, 252, 0.674);
   }
-  .text-box.active {
-    display: block;
-    opacity: 1;
-  }
-  .arrow {
+ 
+  button, .arrow {
     cursor: pointer;
     font-size: 2rem;
     user-select: none;
