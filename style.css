@@ -466,7 +466,8 @@ left
     height: calc(100vh - 30vh - 100px);
     flex-grow: 1;
     background: linear-gradient(rgba(255, 80, 214, 0.813), rgba(255, 94, 252, 0.674));
-    flex-direction: column;   
+    flex-direction: column;  
+    font-size: large; 
   }
   .text-box {
     width: 100%;
