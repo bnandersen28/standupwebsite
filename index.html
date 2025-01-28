@@ -67,7 +67,7 @@
        of individual differences. Join us in fostering a more inclusive environment for <strong>all!</strong></p>
   </div>
   </div>
-  <div id= "text2" class = "text-box" style= "display:none">
+  <div id= "text2" class = "text-box" style= "display: none;">
     <h2 class="rainbow-text">
     <span>G</span><span>e</span><span>t </span>
     <span>I</span><span>n</span><span>v</span><span>o</span><span>l</span><span>v</span><span>e</span><span>d</span>
@@ -94,16 +94,12 @@
   function toggleTextBoxes(){
     var box1 = document.getElementById("text1");
     var box2 = document.getElementById("text2");
-    if(box1.style.visibility === "hidden"){
-      box1.style.position = "static";
-      box1.style.visibility = "visible";
-      box2.style.position = "absolute";
-      box2.style.visibility = "hidden";
+    if(box1.style.display === "none"){
+      box1.style.display = "flex";
+      box2.style.display = "none";
     } else {
-      box1.style.visibility = "hidden";
-      box1.style.position = "absolute";
-      box2.style.visibility = "visible";
-      box2.style.position = "static";
+      box1.style.display = "none";
+      box2.style.position = "flex";
     }
   }
 </script>
