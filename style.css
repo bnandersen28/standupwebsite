@@ -504,4 +504,38 @@ left
     padding-right: 20px;
   }
 
+  .team-page-two{
+    background: linear-gradient(rgba(254, 246, 13, 0.773), rgba(253, 250, 55, 0.579));
+    font-family: 'Baloo 2', cursive;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30vh;
+}
+
+.team-page-two img{
+    width: 15vh;
+    height: auto;
+    object-fit: contain;
+    padding-left: 20px;
+}
+
+.team-page-three{
+    background: linear-gradient(rgba(255, 80, 214, 0.813), rgba(255, 94, 252, 0.674));
+    font-family: 'Baloo 2', cursive;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 25vh;
+}
+
+.team-page-three img{
+    width: 20vh;
+    height: auto;
+    object-fit: contain;
+    padding-right: 20px;
+}
+
 
