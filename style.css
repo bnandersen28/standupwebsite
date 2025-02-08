@@ -488,4 +488,13 @@ left
     user-select: none;
   }
 
+  .team-header-top{
+    background-color: rgba(254, 151, 83, 0.791);
+    font-family: 'Baloo 2', cursive;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+  }
+
 
