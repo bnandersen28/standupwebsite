@@ -79,10 +79,10 @@ header{
     font-size: 1em;
     text-align: center;
     text-shadow: 
-      -2px -2px 0 black, 
-      2px -2px 0 black, 
-      -2px 2px 0 black, 
-      2px 2px 0 black;
+      -2px -2px 0 white, 
+      2px -2px 0 white, 
+      -2px 2px 0 white, 
+      2px 2px 0 white;
     font-weight: bold;
 }
 
