@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <title>Your input</title>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+  <img src="imgs/ink.png" alt="Stand Up Logo" class = "stick-logo">
+  
+  </div>
+<nav class = "navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="team.html">Our team</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="events.html">Calendar</a></li>
+    <li><a href="involvement.html">Your Input</a></li>
+  </ul>
+</nav>
+</header>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("9-RSlVPX_ssTzrSmX"); // Replace with your EmailJS public key
+    })();
+
+    function sendEmail(event) {
+        event.preventDefault(); // Prevent page refresh
+
+        emailjs.send("service_nhmwjj5", "template_ud3eksu", {
+            to_email: "bayleighandersen28@gmail.com", // Change this to the recipient's email
+            user_name: document.getElementById("name").value,
+            user_email: document.getElementById("email").value,
+            message: document.getElementById("message").value
+        }).then(function(response) {
+            alert("Email sent successfully!");
+            document.getElementById("contact-form").reset();
+        }, function(error) {
+            alert("Failed to send email. Try again later.");
+        });
+    }
+</script>
+</head>
+<body>
+<h2>Contact Us</h2>
+<form id="contact-form" onsubmit="sendEmail(event)">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+    <button type="submit">Send Message</button>
+</form>
+</body>
+</html>
