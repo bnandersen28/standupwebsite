@@ -500,7 +500,7 @@ left
   .team-header-top img{
     width: 20vh;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     padding-right: 20px;
   }
 
