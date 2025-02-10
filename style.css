@@ -517,7 +517,7 @@ left
 .team-page-two img{
     width: 15vh;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     padding-left: 20px;
 }
 
@@ -534,7 +534,7 @@ left
 .team-page-three img{
     width: 20vh;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     padding-right: 20px;
 }
 
@@ -542,6 +542,7 @@ left
     height: 5px;
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     margin: 20px 0;
+    background-color: transparent;
 }
 
 
