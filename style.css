@@ -538,4 +538,10 @@ left
     padding-right: 20px;
 }
 
+.rainbow-line {
+    height: 5px;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    margin: 20px 0;
+}
+
 
