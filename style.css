@@ -1,7 +1,11 @@
+html, body {
+    height: 100%;
+} /*Added to try and fix rendering issues*/
+
 
 body{
     margin: 0;
-    overflow-x: hidden; /* Disable horizontal scrolling */
+    /*overflow-x: hidden; /* Disable horizontal scrolling */
     overflow-y: auto;
 }
 
@@ -271,7 +275,7 @@ h1{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    max-height: 100px;
+    min-height: 100px;
 }
 
 .footer-section{
