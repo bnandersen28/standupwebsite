@@ -492,8 +492,12 @@ left
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     box-sizing: border-box;
+  }
+
+  .text-box h2{
+    font-size: 1.5em;
   }
  
   button, .arrow {
