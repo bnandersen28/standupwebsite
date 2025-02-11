@@ -475,6 +475,7 @@ left
 /*Make home page text boxes interactive*/
 .text-container {
     display: flex;
+    overflow: auto;
     justify-content: center;
     align-items: center;
     height: 70vh;
