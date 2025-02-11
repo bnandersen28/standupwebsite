@@ -492,6 +492,19 @@ left
     .text-container {
         height: 60vh; /* Adjust height for smaller screens */
     }
+    .navbar{
+        font-size: .5em;
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 480px) {
+    .text-container {
+        height: 60vh; /* Adjust height for smaller screens */
+    }
+    .navbar{
+        font-size: .5em;
+    }
 }
   .text-box {
     width: 100%;
