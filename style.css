@@ -179,10 +179,10 @@ h1{
 }
 
 .about-page-header{
-    font-size: 2em;
+    font-size: 2.5em;
     font-family: 'Baloo 2', cursive;
     font-weight: bold;
-    height: 10vh;
+    height: 15vh;
     background-color: rgba(254, 151, 83, 0.791);
     padding-top: 20px;
 }
@@ -511,6 +511,9 @@ left
     .navbar{
         font-size: .4em;
     }
+    .footer{
+        font-size: .6em;
+    }
 }
   .text-box {
     width: 100%;
@@ -552,39 +555,7 @@ left
     padding-right: 20px;
   }
 
-  .team-page-two{
-    background: linear-gradient(rgba(254, 246, 13, 0.773), rgba(253, 250, 55, 0.579));
-    font-family: 'Baloo 2', cursive;
-    font-size: 1em;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 30vh;
-}
 
-.team-page-two img{
-    width: 15vh;
-    height: auto;
-    object-fit: cover;
-    padding-left: 20px;
-}
-
-.team-page-three{
-    background: linear-gradient(rgba(255, 80, 214, 0.813), rgba(255, 94, 252, 0.674));
-    font-family: 'Baloo 2', cursive;
-    font-size: 1em;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 25vh;
-}
-
-.team-page-three img{
-    width: 20vh;
-    height: auto;
-    object-fit: cover;
-    padding-right: 20px;
-}
 
 .rainbow-line {
     height: 5px;
@@ -598,15 +569,17 @@ left
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .team-member{
     display:flex; 
     flex-direction: row;
     align-items: center;
+    text-align:center;
     cursor: pointer;
     padding: 20px;
-    color: white; 
+    color: black; 
 }
 
 .team-member img{
@@ -615,7 +588,7 @@ left
     object-fit: cover;
 
 }
-.team-member info {
+.team-member .info {
     width: 50%; /* Text takes up half */
     display: flex;
     flex-direction: column;
@@ -624,8 +597,8 @@ left
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-    text-color: black; 
-    padding-left: 20%;
+    color: black; 
+    padding: 0 10%; /* Centers text properly */
 }
 
 .member1{
