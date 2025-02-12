@@ -611,10 +611,20 @@ left
 }
 
 .team-member img{
-    width: 150px; 
-    height: 150px;   
+    width: 50%; 
+    height: 100%;   
     object-fit: cover;
 
+}
+team-member .info {
+    width: 50%; /* Text takes up half */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .member1{
