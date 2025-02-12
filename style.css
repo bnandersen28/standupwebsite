@@ -589,7 +589,6 @@ left
 .rainbow-line {
     height: 5px;
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    margin: 20px 0;
     background-color: transparent;
 }
 
@@ -616,7 +615,7 @@ left
     object-fit: cover;
 
 }
-team-member .info {
+.team-member .info {
     width: 50%; /* Text takes up half */
     display: flex;
     flex-direction: column;
