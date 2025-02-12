@@ -615,7 +615,7 @@ left
     object-fit: cover;
 
 }
-.team-member .info {
+.team-member info {
     width: 50%; /* Text takes up half */
     display: flex;
     flex-direction: column;
