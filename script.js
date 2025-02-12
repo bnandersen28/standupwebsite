@@ -1,13 +1,6 @@
-function showMember(memberId) {
-    document.querySelectorAll('.member-detail').forEach(member => {
-        member.style.display = 'none';
-    });
-    document.getElementById(memberId).style.display = 'flex';
-}
+function goToMemberPage(page) {
 
-function hideMember() {
-    document.querySelectorAll('.member-detail').forEach(member => {
-        member.style.display = 'none';
-    });
-    document.querySelector('.team-grid').style.display = 'grid';
-}
+    console.log("Redirecting to:", page);  // Check what the page is
+    window.location.href = page;  // Redirect to the page
+ }
+ 
