@@ -645,7 +645,7 @@ team-member .info {
 
 .member-detail{
     display: none;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -659,7 +659,7 @@ team-member .info {
 
 .member-detail img {
     width: 50%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
