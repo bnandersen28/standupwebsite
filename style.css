@@ -569,7 +569,8 @@ left
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
-    flex-wrap: wrap;
+    flex-grow: .5;
+    
 }
 
 .team-member{
@@ -580,6 +581,7 @@ left
     cursor: pointer;
     padding: 20px;
     color: black; 
+    height: 350px;
 }
 
 .team-member img{
@@ -644,4 +646,108 @@ left
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.team-member-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Ensures text colors stay the same */
+    display: block; /* Ensures it behaves like a div */
+    display: inline-block;
+    width: 100%;
+}
+
+/*Team member profile page*/
+/* Profile container */
+.profile-container-4 {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    max-width: 100%;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(rgba(220, 255, 171, 0.765), rgba(155, 255, 33, 0.5));
+
+}
+
+/* Profile container */
+.profile-container-2 {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    max-width: 100%;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(rgba(254, 246, 13, 0.773), rgba(253, 250, 55, 0.579));
+
+}
+.profile-container-3 {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    max-width: 100%;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(rgba(255, 80, 214, 0.813), rgba(255, 94, 252, 0.674));
+
+}
+
+.profile-container-1 {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    max-width: 100%;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(254, 151, 83, 0.791);
+
+}
+
+
+/* Left side: Image */
+.profile-image {
+    width: 50%;
+    height: 100%;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.profile-image-cover{
+    width: 50%;
+    height: 100%;
+}
+
+.profile-image-cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Right side: Info */
+.profile-info {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: .9em;
+    overflow-y: auto;
+}
+
+.profile-info h1{
+    font-size: 2em;
 }
