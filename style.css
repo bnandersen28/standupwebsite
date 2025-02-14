@@ -913,6 +913,21 @@ left
     height: 100%; /* Full height of viewport */
 }
 
-.about-grid{
+.about-page-left{
+    width: 75%; /* Takes 2/3 of the screen */
+    display: flex;
+    flex-direction: column; /* Stack icons in a column */
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.5em;
+    background: linear-gradient(rgba(202, 255, 250), rgba(33, 255, 233, 0.5));
+}
+.about-page-left h2{
+    font-size: 2em;
+    margin: 0px;
+}
 
+.about-container{
+    display: flex;
+    height: 100vh; /* Full height of viewport */
 }
