@@ -612,11 +612,11 @@ left
 }
 
 .member3{
-    background: linear-gradient(rgba(255, 80, 214, 0.813), rgba(255, 94, 252, 0.674));
+    background: linear-gradient(rgba(202, 255, 250), rgba(33, 255, 233, 0.5));
 }
 
 .member4{
-    background: linear-gradient(rgba(220, 255, 171, 0.765), rgba(155, 255, 33, 0.5));
+    background:linear-gradient(rgba(255, 80, 214, 0.813), rgba(255, 94, 252, 0.674));
 }
 
 .member-detail{
@@ -667,7 +667,7 @@ left
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
-    background: linear-gradient(rgba(220, 255, 171, 0.765), rgba(155, 255, 33, 0.5));
+    background: linear-gradient(rgba(255, 80, 214, 0.813), rgba(255, 94, 252, 0.674));
 
 }
 
@@ -693,7 +693,7 @@ left
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
-    background: linear-gradient(rgba(255, 80, 214, 0.813), rgba(255, 94, 252, 0.674));
+    background: linear-gradient(rgba(202, 255, 250), rgba(33, 255, 233, 0.5));
 
 }
 
@@ -911,4 +911,8 @@ left
 .container-involve{
     display: flex;
     height: 100%; /* Full height of viewport */
+}
+
+.about-grid{
+
 }
