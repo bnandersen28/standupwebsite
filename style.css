@@ -751,3 +751,164 @@ left
 .profile-info h1{
     font-size: 2em;
 }
+
+.events{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/*Book design for story hour*/
+.book-container-1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(rgba(255, 80, 214, 0.813), rgba(255, 94, 252, 0.674));
+}
+/*Book design for story hour*/
+.book-container-2 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(rgba(254, 246, 13, 0.773), rgba(253, 250, 55, 0.579));
+}
+
+.book {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.book img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;;
+}
+
+.book-info {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.book-info h2{
+    font-size: 1.5em;
+}
+
+.book-info button {
+    margin-top: 50px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: rgb(98, 231, 217);
+    color: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+/*Layout of events page with 4 info icons*/
+.container {
+    display: flex;
+    height: 100vh; /* Full height of viewport */
+}
+
+.icons-section {
+    width: 67%; /* Takes 2/3 of the screen */
+    display: grid;
+    flex-direction: column; /* Stack icons in a column */
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(rgba(202, 255, 250), rgba(33, 255, 233, 0.5));
+}
+
+.icon-row {
+    display:flex;
+    align-items: center;
+    gap: 15px; 
+    padding-left : 20px;
+    font-size: 2em;
+}
+
+
+
+.icon-row img {
+    width: 80px; /* Adjust size */
+    height: auto;
+}
+
+.text-section {
+    width: 33%; /* Takes 1/3 of the screen */
+    background: linear-gradient(rgba(254, 246, 13, 0.773), rgba(253, 250, 55, 0.579));
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.text-section h2{
+    font-size: 2em;
+}
+.icons-section-involve {
+    width: 50%; /* Takes 2/3 of the screen */
+    display: grid;
+    flex-direction: column; /* Stack icons in a column */
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(rgba(202, 255, 250), rgba(33, 255, 233, 0.5));
+}
+
+.text-section-involve {
+    width: 50%; /* Takes 1/3 of the screen */
+    background: linear-gradient(rgba(254, 246, 13, 0.773), rgba(253, 250, 55, 0.579));
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.text-section-involve h2{
+    font-size: 2em;
+}
+
+.icon-row-involve {
+    display:flex;
+    align-items: center;
+    gap: 15px; 
+    padding-left : 20px;
+    font-size: 1em;
+}
+
+.involve-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.involve-text h2{
+    font-size: 1.5em;
+}   
+
+.icon-row-involve img {
+    width: 150px; /* Adjust size */
+    height: auto;
+}
+.container-involve{
+    display: flex;
+    height: 100%; /* Full height of viewport */
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Stand Up For Yourself and Others!</title>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+  <img src="imgs/ink.png" alt=" Stick Figures" class = "stick-logo">
+  
+  </div>
+<nav class = "navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="team.html">Our team</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="events.html">Calendar</a></li>
+    <li><a href="involvement.html">Your Input</a></li>
+  </ul>
+</nav>
+</header>
+<div class ="about-page-header">
+<div class="rainbow-text">
+<span>G</span><span>e</span><span><span>t </span>
+<span>I</span><span>n</span><span>v</span><span>o</span><span>l</span><span>v</span><span>e</span><span>d</span><span>! </span> 
+</div>
+</div>
+<div class ="rainbow-line"></div>
+<div class ="container-involve">
+<div class="icons-section-involve">
+    <div class="icon-row-involve">
+        <img src="imgs/volunteer.png" alt="Volunteer">
+        <div class ="involve-text">
+        <h2 class = "rainbow-text"><span>V</span><span>o</span><span>l</span><span>u</span><span>n</span><span>t</span><span>e</span><span>e</span><span>r</span></h2>
+        <p>
+            We’ll work to match your interest and schedule to what we have available.</p>
+</div>
+</div>
+    <div class="icon-row-involve">
+        <img src="imgs/hands.png" alt="Feedback">
+        <div class=" involve-text">
+        <h2 class = "rainbow-text"><span>C</span><span>o</span>n<span>n</span><span>e</span><span>c</span><span>t</span></h2>
+        <p>
+            <strong> Connect us with your local communities:</strong></p>
+            <p>
+            We are eager to collaborate with congregations, schools, libraries and other community based organizations to share our books, puppet shows and other programming. If you think your group would benefit from “Stand Up!”, please email us. 
+         </p>
+         </div>
+</div>
+         <div class=" icon-row-involve">
+        <img src="imgs/donate.png" alt="Donate">
+        <div class ="involve-text">
+            <h2 class ="rainbow-text">
+                <span>W</span><span>e </span><span>A</span><span>c</span><span>c</span><span>e</span><span>p</span><span>t </span>
+                <span>D</span><span>o</span><span>n</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span><span>s!</span>
+            </h2>
+            <p>
+            Send donations to Temple Beth El Williamsburg (Our Fiscal Agent)</p><p><strong>Please earmark your donation for “Stand Up” </strong>
+            </p>
+            </div>
+</div>
+</div>
+<div class="text-section-involve">
+    <h2 class="rainbow-text">
+        <span>Y</span><span>o</span><span>u</span><span>r </span>
+        <span>I</span><span>n</span><span>p</span><span>u</span><span>t</span><span>
+    </h2>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("9-RSlVPX_ssTzrSmX"); // Replace with your EmailJS public key
+    })();
+
+    function sendEmail(event) {
+        event.preventDefault(); // Prevent page refresh
+
+        emailjs.send("service_nhmwjj5", "template_ud3eksu", {
+            to_email: "bayleighandersen28@gmail.com", // Change this to the recipient's email
+            user_name: document.getElementById("name").value,
+            user_email: document.getElementById("email").value,
+            message: document.getElementById("message").value
+        }).then(function(response) {
+            alert("Email sent successfully!");
+            document.getElementById("contact-form").reset();
+        }, function(error) {
+            alert("Failed to send email. Try again later.");
+        });
+    }
+</script>
+<h2>Contact Us</h2>
+<form id="contact-form" onsubmit="sendEmail(event)">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="user_email" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+    <button type="submit">Send Message</button>
+</form>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-section">
+      <h1>Contact Us</h1>
+      <p> standup4everyone@gmail.com</p>
+    </div>
+    <div class = "footer-divider"></div>
+    <div class="footer-section">
+      <h1>Follow us</h1>
+      <p> Instagram: @standupforyourselfandothers</p>
+    </div>
+  </footer>
+  </div>
+</body>
