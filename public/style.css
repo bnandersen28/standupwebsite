@@ -840,6 +840,7 @@ left
 .rainbow-button{
     font-family: 'Baloo 2', cursive;
     font-size: 18px;
+    font-weight: bold;
     background: linear-gradient(to right, rgb(255, 128, 128), rgb(255, 203, 107), rgb(255, 255, 198), rgb(190, 255, 190), rgb(125, 125, 253), rgb(195, 111, 255), rgb(255, 171, 255));
     color: black;
     border: 2px solid rgba(0, 0, 0, 0.2);
@@ -852,7 +853,7 @@ left
 }
 
 .events-buttons{
-    background-color: linear-gradient(rgba(255, 198, 170, 0.813), rgba(237, 255, 159, 0.674));
+    background: linear-gradient(rgba(255, 198, 170, 0.813), rgba(237, 255, 159, 0.674));
     display: flex;
     flex-direction: column;
     justify-content: center;
