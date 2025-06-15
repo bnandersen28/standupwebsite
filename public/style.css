@@ -850,13 +850,21 @@ left
     font-family: 'Baloo 2', cursive;
     font-size: 16px;
     background: white;
-    color: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
     margin: 10px;
     transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.events-buttons{
+    background-color: rgba(254, 151, 83, 0.791);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .rainbow-button:hover {
