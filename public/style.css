@@ -835,16 +835,7 @@ left
     color: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
 
-.rainbow-text-2{
-    font-family: 'Baloo 2', cursive;
-    font-size: 28px;
-    text-align: center;
-    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-weight: bold;
-}
+
 
 .rainbow-button{
     font-family: 'Baloo 2', cursive;
