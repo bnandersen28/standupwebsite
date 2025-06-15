@@ -837,7 +837,7 @@ left
 
 .rainbow-text-2{
     font-family: 'Baloo 2', cursive;
-    font-size: 2em;
+    font-size: 22px;
     text-align: center;
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     -webkit-background-clip: text;
@@ -848,7 +848,7 @@ left
 
 .rainbow-button{
     font-family: 'Baloo 2', cursive;
-    font-size: 1.5em;
+    font-size: 16px;
     background: white;
     color: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     border: 2px solid rgba(0, 0, 0, 0.2);
