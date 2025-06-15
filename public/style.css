@@ -840,7 +840,7 @@ left
 .rainbow-button{
     font-family: 'Baloo 2', cursive;
     font-size: 18px;
-    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background: linear-gradient(to right, rgb(255, 128, 128), rgb(255, 203, 107), rgb(255, 255, 198), rgb(190, 255, 190), rgb(125, 125, 253), rgb(195, 111, 255), rgb(255, 171, 255));
     color: black;
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
