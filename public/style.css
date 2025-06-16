@@ -875,6 +875,8 @@ left
 }
 
 .event-details{
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
     border-radius: 5px;
 }
 /*Layout of events page with 4 info icons*/
