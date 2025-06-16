@@ -841,7 +841,7 @@ left
     font-family: 'Baloo 2', cursive;
     font-size: 18px;
     font-weight: bold;
-    background: linear-gradient(to right, rgb(255, 128, 128), rgb(255, 203, 107), rgb(255, 255, 198), rgb(190, 255, 190), rgb(125, 125, 253), rgb(195, 111, 255), rgb(255, 171, 255));
+    background: linear-gradient(rgba(216, 216, 216, 0.972), rgb(232, 232, 232), rgba(255, 255, 255, 0.814));
     color: black;
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -871,7 +871,7 @@ left
     justify-content: center;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(rgba(237, 255, 159, 0.674), rgba(212, 255, 189, 0.813), rgba(159, 255, 231, 0.674));
+    background: linear-gradient(rgba(237, 255, 159, 0.674), rgba(212, 255, 189, 0.813), rgba(159, 210, 255, 0.674), rgba(212, 198, 253, 0.813));
 }
 
 .event-details{
