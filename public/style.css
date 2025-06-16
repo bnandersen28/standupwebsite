@@ -163,7 +163,9 @@ h1{
     font-size: 2em;
 }
 .about{
-    background-color: rgba(255, 80, 214, 0.813), rgba(255, 94, 252, 0.674);
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgba(255, 198, 170, 0.813), rgba(237, 255, 159, 0.674), rgba(212, 255, 189, 0.813), rgba(159, 210, 255, 0.674), rgba(212, 198, 253, 0.813));
     font-family: 'Baloo 2', cursive;
 }
 
@@ -173,17 +175,17 @@ h1{
     font-size: 1em;
     display: flex;
     flex-wrap:wrap;
-    flex-direction: row;
+    flex-direction: column;
     height: 30vh;
     width: 100%;
 }
+.about-container
 
 .about-page-header{
     font-size: 2.5em;
     font-family: 'Baloo 2', cursive;
     font-weight: bold;
     height: 15vh;
-    background-color: rgba(254, 151, 83, 0.791);
     padding-top: 20px;
 }
 
