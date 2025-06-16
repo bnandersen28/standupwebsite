@@ -31,67 +31,7 @@
   <button id="upcoming" class="rainbow-button">Upcoming Events</button>
   <button id="past" class="rainbow-button">Past Events</button>
 </div>
-
-
-  <!--<div class="events">
-    <div class="book-container-1">
-      <div class="book">
-              <div class="book-image">
-                  <div class="book-info">
-                    <h2 class = "rainbow-text">
-                      <span>S</span><span>t</span><span>o</span><span>r</span><span>y </span>
-                      <span>H</span><span>o</span><span>u</span><span>r</span>
-                    </h2>
-                      <span class="book-date">June 14th, 2025</span>
-                      <a href = "june.html"> <button>Learn More</button></a>
-                  </div>
-              </div>
-      </div>
-    </div>
-    <div class="book-container-2">
-      <div class="book">
-              <div class="book-image">
-                  <div class="book-info">
-                    <h2 class = "rainbow-text">
-                      <span>J</span><span>u</span><span>n</span><span>e</span><span>t</span><span>e</span><span>e</span><span>n</span><span>t</span><span>h</span>
-                      <span>F</span><span>r</span><span>e</span><span>e</span><span>d</span><span>o</span><span>m</span>
-                      <span>F</span><span>e</span><span>s</span><span>t</span><span>i</span><span>v</span><span>a</span><span>l</span>
-                    </h2>
-                      <span class="book-date">June 24th, 2025</span>
-                      <a href = "june2.html"> <button>Learn More</button></a>
-                  </div>
-              </div>
-      </div>
-  <div class="book-container-3">
-      <div class="book">
-              <div class="book-image">
-                  <div class="book-info">
-                    <h2 class = "rainbow-text">
-                      <span>S</span><span>t</span><span>o</span><span>r</span><span>y </span>
-                      <span>H</span><span>o</span><span>u</span><span>r</span>
-                    </h2>
-                      <span class="book-date">February 21st, 2025</span>
-                      <a href = "febevents.html"> <button>Learn More</button></a>
-                  </div>
-              </div>
-      </div>
-      </div>
-      <div class="book-container-4">
-      <div class="book">
-              <div class="book-image">
-                  <div class="book-info">
-                    <h2 class = "rainbow-text">
-                      <span>S</span><span>t</span><span>o</span><span>r</span><span>y </span>
-                      <span>H</span><span>o</span><span>u</span><span>r</span>
-                    </h2>
-                      <span class="book-date">March 21st, 2025</span>
-                      <a href = "marevents.html"> <button>Learn More</button></a>
-                  </div>
-              </div>
-
-      </div>
-  </div>
-  </div>-->
+<div id="events-container"></div>
   </body> 
   <footer class="footer">
     <div class="footer-section">
@@ -104,4 +44,62 @@
         <a href=" https://www.instagram.com/standupforyourselfandothers/" target="_blank">Instagram: @standupforyourselfandothers</p>
     </div>
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded",()=>{
+      const upcomingEvents = [
+        { title: 'Story Hour featuring Cathie Allport', date: 'June 24th, 2025', time: '2:00pm', location: 'Williamsburg Regional Library 515 Scotland Street Williamsburg, VA 23185', description: 'Join us for a story hour with Cathie Allport. She will be reading stories from WRL’s Stand Up for Yourself & Others anti-bullying collection in honor of Kindness Week!' }, 
+        { title: 'Mutifaith Dialogue and Action Event', date: 'June 29th, 2025', time: ' 2:30-4:00 p.m', location: 'St. Martin\'s 1333 Jamestown Rd, Williamsburg', description: 'Join Historic Area Religions Together (HART) and other local organizations for an afternoon of sharing, connection, and commitment to maing this a braver and kinder community. We\'ll hear from African American, immigrant, and LGBTQ+ neighbors about the religious values that inspire them to Stand Up for themselves, and learn how we can work together for justice and respect for human dignity. RSVP here: Stand Up RSVP for 6/29'  }
+      ]; 
+
+      const pastEvents = [
+        { title: 'Story Hour featuring Sandy Towers', date: 'February 21st, 2025', time: '10am', location: 'Williamsburg Regional Library, 515 Scotlad Street Williamsburg, VA 23185', description: '– Sandy Towers is the Library Director of the Williamsburg Regional Library and an integral member of our Williamsburg community. Join us to hear books from our “Stand Up!” collections, as well as a sing along and games!'},
+        { title: 'Story Hour featuring Andrew Trivette', date: 'March 21st, 2025', time: '10am', location: 'Williamsburg Regional Library', description: 'Andrew Trivette is Williamsburg’s City Manager. He will be taking a short break from keeping Williamsburg running to read some of our “Stand Up!” books, play some games, and get to know some families!' },
+        { title: 'Stand Up Puppet Show', date: 'May 10th, 2025', time: '1:30pm', location: 'Abram Frink Community Center', description: 'Join the Rainbow Puppeteers on a musical treasure hunt full of laughs, magic, and life-sized puppets! As they follow a treasure map, they discover the greatest treasure isn’t gold—it’s kindness, respect, and standing up for each other. ' }, 
+        { title: 'Story hour featuring Pastor John Morgan', date: 'May 16th, 2025', time: '10am', location:'Williamsburg Regional Library 515 Scotland Street, Williamsburg, VA, 23185', description: 'Join us for a story hour with Pastor John Morgan. Morgan is Head of Staff at Williamsburg Presbyterian Church. He will be reading stories from WRL’s Stand Up for Yourself & Others anti-bullying collection.' }, 
+        { title: 'Story Hour featuring Jarmarcus King', date: 'May 17th, 2025', time: '3pm', location: 'James City County Library 7770 Croaker Road Williamsburg, VA 23188', description: 'Join us for a story hour with JarMarcus King. King is a U.S. Army veteran and tech entrepreneur focused on AR/VR innovation . He will be reading stories from WRL’s Stand Up for Yourself & Others anti-bullying collection.'}, 
+        { title: 'Juneteenth Freedom Fest', date: 'June 14th, 2025', time:'1-5pm', location: 'Freedom Park 5537 Centerville RD, Williamsburg, Va', description: 'Come learn more about our initiative at the Juneteenth Freedom Fest, proudly hosted by the York James City Williamsburg NAACP! This event is a wonderful opportunity to connect with the community, celebrate freedom, and discover how Stand Up! For Yourself and Others empowers families and children to foster kindness, courage, and resilience. We look forward to seeing you there!'}
+      ]; 
+      const eventsContainer = document.getElementById('events-container');
+      const upcomingButton = document.getElementById('upcoming');
+      const pastButton = document.getElementById('past');
+
+      function displayEvents(events){
+        eventsContainer.innerHTML = '';
+        events.forEach(event => {
+          const eventDiv = document.createElement('div')'
+          eventDiv.classList.add('event');
+
+          //Create title element
+          const title = document.createElement('h2');
+          title.textContent = event.title;
+          title.classList.add('event-title');
+          title.style.cursor = 'pointer';
+
+          //Create details container
+          const details = document.createElement('div');
+          details.classList.add('event-details');
+          details.style.display = 'none';
+          details.innerHTML = `
+            <p><strong>Date:</strong> ${event.date}</p>
+            <p><strong>Time:</strong> ${event.time}</p>
+            <p><strong>Location:</strong> ${event.location}</p>
+            <p><strong> ${event.description}</p>
+          `;
+
+          title.addEventListener('click', () => {
+            details.style.display = details.style.display === 'none' ? 'block' : 'none';
+          });
+          eventDiv.appendChild(title);
+          eventDiv.appendChild(details);
+          eventsContainer.appendChild(eventDiv);
+        });
+      }
+      upcomingButton.addEventListener('click', () => {
+        displayEvents(upcomingEvents);
+      });
+      pastButton.addEventListener('click', () => {
+        displayEvents(pastEvents);
+      });
+    })
+  </script>
   </html>

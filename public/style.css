@@ -847,7 +847,7 @@ left
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    margin: 10px;
+    margin: 20px;
     transition: background-color 0.3s ease;
     text-align: center;
 }
@@ -862,6 +862,11 @@ left
 
 .rainbow-button:hover {
     background-color: rgba(240, 240, 240, 0.8);
+}
+
+#events-container{
+    padding: 20px;
+    background-color: aliceblue;
 }
 /*Layout of events page with 4 info icons*/
 .container {
