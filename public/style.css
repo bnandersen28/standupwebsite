@@ -164,22 +164,20 @@ h1{
 }
 .about{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background: linear-gradient(rgba(255, 198, 170, 0.813), rgba(237, 255, 159, 0.674), rgba(212, 255, 189, 0.813), rgba(159, 210, 255, 0.674), rgba(212, 198, 253, 0.813));
     font-family: 'Baloo 2', cursive;
 }
 
 .about-page-top{
-    background-color: rgba(254, 151, 83, 0.791);
     font-family: 'Baloo 2', cursive;
     font-size: 1em;
     display: flex;
     flex-wrap:wrap;
     flex-direction: column;
-    height: 30vh;
-    width: 100%;
+   
 }
-.about-container
+
 
 .about-page-header{
     font-size: 2.5em;
@@ -197,12 +195,9 @@ h1{
 }
 
 .about-page-two{
-    background: linear-gradient(rgba(254, 246, 13, 0.773), rgba(253, 250, 55, 0.579));
-    font-family: 'Baloo 2', cursive;
     font-size: 1.5em;
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
     height: 20vh;
 }
 
@@ -214,12 +209,9 @@ h1{
 }
 
 .about-page-three{
-    background: linear-gradient(rgba(255, 80, 214, 0.813), rgba(255, 94, 252, 0.674));
-    font-family: 'Baloo 2', cursive;
     font-size: 1.5em;
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
     height: 20vh;
 }
 
@@ -237,10 +229,13 @@ h1{
 
 .grid-item{
     display : flex;
-    flex-direction: row;
     align-items: center;
     text-align: center;
     font-size: 1em;
+}
+
+.about-rows{
+    flex-direction: row;;
 }
 
 
