@@ -846,6 +846,7 @@ left
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 10px 20px;
+    margin: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-align: center;
