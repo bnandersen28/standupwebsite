@@ -174,7 +174,7 @@ h1{
     font-size: 1em;
     display: flex;
     flex-wrap:wrap;
-    width: 32%;
+    width: 52%;
     flex-direction: column;
    
 }
@@ -200,7 +200,7 @@ h1{
     font-size: 1.5em;
     display: flex;
     flex-direction: column;
-    width: 32%;
+    width: 48%;
 }
 
 .about-page-two img{
@@ -208,20 +208,6 @@ h1{
     height: auto;
     object-fit: contain;
     padding-left: 20px;
-}
-
-.about-page-three{
-    font-size: 1.5em;
-    display: flex;
-    flex-direction: column;
-    width: 32%;
-}
-
-.about-page-three img{
-    width: 20vh;
-    height: auto;
-    object-fit: contain;
-    padding-right: 20px;
 }
 
 
