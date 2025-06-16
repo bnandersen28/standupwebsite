@@ -234,6 +234,8 @@ h1{
 }
 
 .about-rows{
+    display:flex;
+    width: 100%;
     flex-direction: row;;
 }
 
