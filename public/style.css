@@ -871,7 +871,7 @@ left
     justify-content: center;
     display: flex;
     flex-direction: column;
-    background-color: (rgba(212, 255, 189, 0.813), rgba(159, 255, 231, 0.674));
+    background-color: linear-gradient(rgba(212, 255, 189, 0.813), rgba(159, 255, 231, 0.674));
 }
 /*Layout of events page with 4 info icons*/
 .container {
