@@ -866,7 +866,11 @@ left
 
 #events-container{
     padding: 20px;
-    background-color: aliceblue;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 /*Layout of events page with 4 info icons*/
 .container {
