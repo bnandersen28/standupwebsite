@@ -179,6 +179,9 @@ h1{
     align-items: center;
     justify-content: center;
     padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    border-color: #ccc;
 }
 
 
@@ -192,17 +195,19 @@ h1{
 }
 
 .about-page-top img{
-    width: 20vh;
+    width: 30vh;
     height: auto;
     object-fit: contain;
     padding-right: 20px;
 }
 
 .about-page-two{
-    font-size: 1.5em;
+    font-size: 1em;
     display: flex;
     flex-direction: column;
     width: 40%;
+    border-radius: 5px;
+    border-color: #ccc;
 }
 .about-row{
     flex-direction: row;
