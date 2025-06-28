@@ -180,6 +180,7 @@ h1{
     justify-content: center;
     padding: 20px;
     border-radius: 5px;
+    border: 2px solid #ccc;
     margin: 0 auto;
     border-color: #ccc;
 }
@@ -205,8 +206,11 @@ h1{
     font-size: 1em;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     width: 40%;
+    padding: 20px;
     border-radius: 5px;
+    border: 2px solid #ccc;
     border-color: #ccc;
 }
 .about-row{
@@ -218,7 +222,7 @@ h1{
     width: 15vh;
     height: auto;
     object-fit: contain;
-    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
