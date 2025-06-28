@@ -410,6 +410,12 @@ left
     flex-direction: row;
 }
 
+.involve-item img{
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+}
+
 .involve-info{
     width: 55%;
     padding: 20px;
