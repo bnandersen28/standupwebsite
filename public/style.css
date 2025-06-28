@@ -419,7 +419,7 @@ left
     object-fit: contain;
 }
 
-.involve-item h2, p{
+.involve-item-text{
     text-align: center;
     display: flex;
     flex-direction: column;
