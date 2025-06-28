@@ -174,9 +174,11 @@ h1{
     font-size: 1em;
     display: flex;
     flex-wrap:wrap;
-    width: 52%;
+    width: 60%;
     flex-direction: column;
-   
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 
@@ -200,7 +202,11 @@ h1{
     font-size: 1.5em;
     display: flex;
     flex-direction: column;
-    width: 48%;
+    width: 40%;
+}
+.about-row{
+    flex-direction: row;
+    display: flex;
 }
 
 .about-page-two img{
