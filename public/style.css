@@ -180,7 +180,7 @@ h1{
     justify-content: center;
     padding: 20px;
     border-radius: 5px;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
     margin: 0 auto;
     border-color: #ccc;
 }
@@ -192,6 +192,7 @@ h1{
     font-family: 'Baloo 2', cursive;
     font-weight: bold;
     height: 15vh;
+    border: 1px solid #ccc;
     padding-top: 20px;
 }
 
@@ -210,7 +211,7 @@ h1{
     width: 40%;
     padding: 20px;
     border-radius: 5px;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
     border-color: #ccc;
 }
 .about-row{
