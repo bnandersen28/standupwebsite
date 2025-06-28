@@ -182,7 +182,6 @@ h1{
     border-radius: 5px;
     border: 1px solid white;
     margin: 0 auto;
-    border-color: #ccc;
 }
 
 
@@ -386,6 +385,41 @@ left
     font-size: 1em;
     font-family: 'Baloo 2', cursive;
     margin-left: 40px;
+}
+
+.involve{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(255, 198, 170, 0.813), rgba(237, 255, 159, 0.674), rgba(212, 255, 189, 0.813), rgba(159, 210, 255, 0.674), rgba(212, 198, 253, 0.813));
+    font-family: 'Baloo 2', cursive;
+    height: auto;
+}
+
+.involve h2{
+    font-size: 22px;
+    text-align: center;
+}
+
+.involve-content{
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.involve-item{
+    flex-direction: row;
+}
+
+.involve-info{
+    width: 55%;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.involve-form{
+    width: 45%;
+    padding: 20px;
+    flex-direction: column;
 }
 
 .involve-outer-one{
