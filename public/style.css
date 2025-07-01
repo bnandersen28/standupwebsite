@@ -718,6 +718,17 @@ left
     align-items: center;
     justify-content: center;
     padding: 20px;
+    text-align: center;
+}
+
+.project{
+    width: 95%;
+}
+
+.project img{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
 }
 
 
