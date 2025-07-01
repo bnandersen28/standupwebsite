@@ -24,47 +24,37 @@
   </ul>
 </nav>
 </header>
-<div class = "story-hour-outer">
-    <div class="story-hour-words">
-    <div class = "story-hour-header">
-      <div class ="rainbow-text">
-        <span>S</span><span>t</span><span>o</span><span>r</span><span>y </span>
-        <span>H</span><span>o</span><span>u</span><span>r</span><span>s</span>
-      </div>
-    </div>
-    <p>Join us for “Stand Up! For Yourself and Others” Story Hours at local libraries 
+<div class = "projects-container">
+      <div id ="text1">
+        <h1>Story Hours</h1>
+      
+        <p>Join us for “Stand Up! For Yourself and Others” Story Hours at local libraries 
         and faith communities, where community leaders from all corners of Williamsburg 
         read stories to children that promote the value of individual differences. The 
         stories come from our carefully chosen book collection, which includes over 100 
         books we’ve donated to the Williamsburg Regional Library.</p>
-    </div>
     <img src="imgs/storytime.png" alt="Story Time">
 </div>
-<div class ="puppet-outer">
-    <img src="imgs/puppets.png" alt="Puppets">
-    <div class="puppet-words">
-    <div class ="story-hour-header">
-        <div class ="rainbow-text">
-            <span>P</span><span>u</span><span>p</span><span>p</span><span>e</span><span>t </span>
-            <span>S</span><span>h</span><span>o</span><span>w</span><span>s</span>
-          </div>
-        </div>
+<div id ="text2" style="display: none;">
+  <h1>Puppet Shows</h1>  
+  <img src="imgs/puppets.png" alt="Puppets">
+        
+        
         <p>
             At “Stand Up! For yourself and others”, we are proud to partner up with the Rainbow Puppet Company, created by David Messick, whose anti-bullying puppet show program “Speak Out- The Search for Gold” has become a trusted resource for many schools and communities.  
 
             The program follows the Rainbow Puppeteers as they embark on a treasure hunt, teaching children that the greatest treasure is respect and trust for others. One of the key stories featured in the program, “The Wall,” highlights the importance of teamwork and valuing individual skills.
         </p>
-    </div>
-</div>
-<div class ="puppet-outer-two">
-    <div class = "puppet-words-two">
+    <
         <p>
             To learn more about the Rainbow Puppet Company and their puppet show productions,
              visit their website at <a href="https://rainbowpuppets.com/"target="_blank">https://rainbowpuppets.com/</a>. You can also view highlights 
             of their numerous puppet shows on their youtube channel at <a href="https://www.youtube.com/@davidmessick6577" target="_blank">https://www.youtube.com/@davidmessick6577</a>. 
         </p>
-    </div>
+    
     <img src = "imgs/rainboww.png" alt="Rainbow">
+    </div>
+    <div class="arrow" onclick="toggleTextBoxes()">&#8594;</div>
 </div>
 <footer class="footer">
     <div class="footer-section">
@@ -79,3 +69,20 @@
   </footer>
   </div>
 </body>
+<script>
+  function toggleTextBoxes(){
+    var box1 = document.getElementById("text1");
+    var box2 = document.getElementById("text2");
+    if(box1.style.display === "none"){
+      box1.style.display = "flex";
+      box2.style.display = "none";
+    } else {
+      box1.style.display = "none";
+      box2.style.display = "flex";
+    }
+  }
+</script>
+</body>
+</html>
+
+</script>
