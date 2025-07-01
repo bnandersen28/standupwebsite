@@ -723,11 +723,13 @@ left
 
 .project{
     width: 95%;
+    display: flex;
+    flex-direction: column;
 }
 
 .project img{
     object-fit: contain;
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
