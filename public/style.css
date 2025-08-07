@@ -947,6 +947,12 @@ left
     align-items: center;
 }
 
+.team-page h2{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .team-mem{
     width: 75%; 
     border: 2px solid white;
@@ -954,8 +960,14 @@ left
     align-items: row; 
 }
 
+.team-mem img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
 .team-title{
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     align-items: column;
 }
