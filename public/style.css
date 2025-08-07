@@ -948,7 +948,7 @@ left
 }
 
 .team-page h2{
-    font-size: 25px;
+    font-size: 28px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -973,15 +973,18 @@ left
 .team-title{
     text-align: center;
     align-items: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .team-title h2{
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
 }
 
 .team-title h1{
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .team-title:hover {
