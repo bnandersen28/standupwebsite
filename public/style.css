@@ -976,6 +976,10 @@ left
     align-items: column;
 }
 
+.team-title:hover {
+    transform: scale(1.1);
+}
+
 .mem-info{
     display: none;
 }
