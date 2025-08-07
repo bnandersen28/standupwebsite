@@ -190,10 +190,10 @@
     document.querySelectorAll('.team-title').forEach(title => {
         title.addEventListener('click', () => {
             const info = title.querySelector('.mem-info');
-            if (info.style.display === 'flex') {
+            if (info.style.display === 'block') {
                 info.style.display = 'none';
             } else {
-                info.style.display = 'flex';
+                info.style.display = 'block';
             }
         });
     });
