@@ -961,12 +961,13 @@ left
 }
 
 .team-mem img{
-    width: 50%;
-    height: auto;
+    width: 45%;
+    height: 75%;
     object-fit: cover;
 }
 
 .team-title{
+    width: 50%;
     font-size: 1.5em;
     text-align: center;
     align-items: column;
