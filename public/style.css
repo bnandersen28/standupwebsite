@@ -957,12 +957,14 @@ left
     width: 75%; 
     border: 2px solid white;
     border-radius: 5px;
-    align-items: row; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .team-mem img{
-    width: 45%;
-    height: 75%;
+    width: 40%;
+    height: 50%;
     object-fit: cover;
 }
 
