@@ -972,10 +972,12 @@ left
 
 .team-title{
     text-align: center;
-    align-items: column;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 50%;
+
 }
 
 .team-title h2{
@@ -995,8 +997,6 @@ left
     display: none;
     font-size: 15px;
     text-align: center;
-    width: 50%;
-    position: relative;
 }
 
 .rainbow-button:hover {
