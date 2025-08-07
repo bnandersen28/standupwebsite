@@ -966,6 +966,7 @@ left
 .team-mem img{
     width: 300px;
     height: auto;
+    max-height: 300px;
     object-fit: cover;
 }
 
