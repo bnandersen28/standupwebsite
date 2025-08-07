@@ -947,6 +947,19 @@ left
     align-items: center;
 }
 
+.team-mem{
+    width: 75%; 
+    border: 2px solid white;
+    border-radius: 5px;
+    align-items: row; 
+}
+
+.team-title{
+    font-size: 2em;
+    text-align: center;
+    align-items: column;
+}
+
 .rainbow-button:hover {
     background-color: rgba(240, 240, 240, 0.8);
 }
