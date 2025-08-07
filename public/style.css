@@ -963,16 +963,19 @@ left
 }
 
 .team-mem img{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
 }
 
 .team-title{
-    width: 50%;
-    font-size: 1.5em;
+    font-size: 20px;
     text-align: center;
     align-items: column;
+}
+
+.mem-info{
+    display: none;
 }
 
 .rainbow-button:hover {
