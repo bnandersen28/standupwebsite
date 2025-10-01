@@ -164,6 +164,8 @@ h1{
 }
 .about{
     display: flex;
+    align-items: center;
+    width: 100%;
     flex-direction: column;
     background: linear-gradient(rgba(255, 198, 170, 0.813), rgba(237, 255, 159, 0.674), rgba(212, 255, 189, 0.813), rgba(159, 210, 255, 0.674), rgba(212, 198, 253, 0.813));
     font-family: 'Baloo 2', cursive;
@@ -171,17 +173,23 @@ h1{
 
 .about-page-top{
     font-family: 'Baloo 2', cursive;
-    font-size: 1em;
+    font-size: 1.5em;
     display: flex;
     flex-wrap:wrap;
-    width: 60%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
     border-radius: 5px;
-    border: 1px solid white;
     margin: 0 auto;
+}
+
+.about-page-top p{
+    width: 90%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -191,8 +199,12 @@ h1{
     font-family: 'Baloo 2', cursive;
     font-weight: bold;
     height: 15vh;
-    border: 1px solid white;
     padding-top: 20px;
+}
+
+.about-page-header h2{
+    font-size: 2em;
+    margin: 0px;
 }
 
 .about-page-top img{
@@ -203,26 +215,41 @@ h1{
 }
 
 .about-page-two{
-    font-size: 1em;
+    font-size: 1.5em;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 40%;
+    width: 100%;
     padding: 20px;
     border-radius: 5px;
-    border: 1px solid white;
-   
+}
+
+.about-page-two p{
+    width: 90%;
+    text-align: center;
+    padding: 20px;
 }
 .about-row{
     flex-direction: row;
+    height: 35vh;
     display: flex;
+    width: 85%;
+    margin: 20px auto;
+    align-items: center;
+    border: 2px solid white;
+}
+
+.about-row:hover {
+    transform: scale(1.05);
 }
 
 .about-page-two img{
-    width: 15vh;
+    width: 25vh;
     height: auto;
     object-fit: contain;
     padding-right: 20px;
+    margin: 20px;
 }
 
 
@@ -237,7 +264,7 @@ h1{
 .about-rows{
     display:flex;
     width: 100%;
-    flex-direction: row;;
+    flex-direction: column;
 }
 
 
@@ -272,7 +299,76 @@ h1{
     align-items: center;
 }
 
+/*Admin login page*/
+.login, .admin-page{
+    background: linear-gradient(rgba(255, 198, 170, 0.813), rgba(237, 255, 159, 0.674), rgba(212, 255, 189, 0.813), rgba(159, 210, 255, 0.674), rgba(212, 198, 253, 0.813));
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
 
+.login, .admin-page h2{
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+}
+
+.admin-page button{
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin: 20px;
+
+}
+
+.admin-page form{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.admin-page input{
+    font-size: 1em;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.admin-page select{
+    font-size: 1em;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.admin-page textarea{
+    font-size: 1em;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 300px;
+    height: 100px;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 20px;
+    font-size: 1.5em;
+}
 
 .footer{
     background-color: rgba(187, 119, 255, 0.912);

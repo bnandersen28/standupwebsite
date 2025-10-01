@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <title>Admin</title>
+    <script type="module" src="/admin.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <img src="imgs/ink.png" alt=" Stand up logo" class="stick-logo">
+
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Our team</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="events.html">Calendar</a></li>
+                <li><a href="involve.html">Your Input</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="admin-page">
+        <h2>Admin Page</h2>
+        <button id="toggle-event-form">Add New Event</button>
+        <form id="event-form" style="display: none;">
+            <h3>Add Event</h3>
+            <input type="text" id="title" placeholder="Event Title" required><br>
+            <input type="date" id="date" required><br>
+            <input type="text" id="time" placeholder="Time" required><br>
+            <input type="text" id="location" placeholder="Location" required><br>
+            <textarea id="description" placeholder="Description"></textarea><br>
+            <select id="type" required>
+                <option value="upcoming">Upcoming</option>
+                <option value="past">Past</option>
+            </select><br>
+            <button type="submit">Submit</button>
+        </form>
+        <button id="toggle-pic-form">Add New Picture</button>
+    </div>
+</body>
+<footer class="footer">
+    <div class="footer-section">
+        <h1>Contact Us</h1>
+        <p><a href="mailto:standup4everyone@gmail.com">standup4everyone@gmail.com</a></p>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-section">
+        <h1>Follow us</h1>
+        <a href=" https://www.instagram.com/standupforyourselfandothers/" target="_blank">Instagram:
+            @standupforyourselfandothers</p>
+    </div>
+</footer>
+
+<script>
+    // Script to toggle event form visibility
+    const toggleEventFormButton = document.getElementById('toggle-event-form');
+    const eventForm = document.getElementById('event-form');
+
+    toggleEventFormButton.addEventListener('click', () => {
+        if (eventForm.style.display === 'none' || eventForm.style.display === '') {
+            eventForm.style.display = 'block';
+            toggleEventFormButton.textContent = 'Close Form';
+        } else {
+            eventForm.style.display = 'none';
+            toggleEventFormButton.textContent = 'Add New Event';
+        }
+    });
+</script>

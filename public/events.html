@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
-  <title>About Us</title>
+  <title>Events</title>
 </head>
 <body>
   <header>
@@ -45,27 +45,49 @@
         <a href=" https://www.instagram.com/standupforyourselfandothers/" target="_blank">Instagram: @standupforyourselfandothers</p>
     </div>
   </footer>
-  <script>
-    document.addEventListener("DOMContentLoaded",()=>{
-      const upcomingEvents = [
-        { title: 'Story Hour featuring Cathie Allport', date: 'June 24th, 2025', time: '2:00pm', location: 'Williamsburg Regional Library 515 Scotland Street Williamsburg, VA 23185', description: 'Join us for a story hour with Cathie Allport. She will be reading stories from WRL’s Stand Up for Yourself & Others anti-bullying collection in honor of Kindness Week!' }, 
-        { title: 'Mutifaith Dialogue and Action Event', date: 'June 29th, 2025', time: ' 2:30-4:00 p.m', location: 'St. Martin\'s 1333 Jamestown Rd, Williamsburg', description: 'Join Historic Area Religions Together (HART) and other local organizations for an afternoon of sharing, connection, and commitment to maing this a braver and kinder community. We\'ll hear from African American, immigrant, and LGBTQ+ neighbors about the religious values that inspire them to Stand Up for themselves, and learn how we can work together for justice and respect for human dignity. RSVP here: Stand Up RSVP for 6/29'  }
-      ]; 
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getFirestore, collection, getDocs, query, orderBy } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+    import { firebaseConfig } from "../firebaseConfig.js";
 
-      const pastEvents = [
-        { title: 'Story Hour featuring Sandy Towers', date: 'February 21st, 2025', time: '10am', location: 'Williamsburg Regional Library, 515 Scotlad Street Williamsburg, VA 23185', description: '– Sandy Towers is the Library Director of the Williamsburg Regional Library and an integral member of our Williamsburg community. Join us to hear books from our “Stand Up!” collections, as well as a sing along and games!'},
-        { title: 'Story Hour featuring Andrew Trivette', date: 'March 21st, 2025', time: '10am', location: 'Williamsburg Regional Library', description: 'Andrew Trivette is Williamsburg’s City Manager. He will be taking a short break from keeping Williamsburg running to read some of our “Stand Up!” books, play some games, and get to know some families!' },
-        { title: 'Stand Up Puppet Show', date: 'May 10th, 2025', time: '1:30pm', location: 'Abram Frink Community Center', description: 'Join the Rainbow Puppeteers on a musical treasure hunt full of laughs, magic, and life-sized puppets! As they follow a treasure map, they discover the greatest treasure isn’t gold—it’s kindness, respect, and standing up for each other. ' }, 
-        { title: 'Story hour featuring Pastor John Morgan', date: 'May 16th, 2025', time: '10am', location:'Williamsburg Regional Library 515 Scotland Street, Williamsburg, VA, 23185', description: 'Join us for a story hour with Pastor John Morgan. Morgan is Head of Staff at Williamsburg Presbyterian Church. He will be reading stories from WRL’s Stand Up for Yourself & Others anti-bullying collection.' }, 
-        { title: 'Story Hour featuring Jarmarcus King', date: 'May 17th, 2025', time: '3pm', location: 'James City County Library 7770 Croaker Road Williamsburg, VA 23188', description: 'Join us for a story hour with JarMarcus King. King is a U.S. Army veteran and tech entrepreneur focused on AR/VR innovation . He will be reading stories from WRL’s Stand Up for Yourself & Others anti-bullying collection.'}, 
-        { title: 'Juneteenth Freedom Fest', date: 'June 14th, 2025', time:'1-5pm', location: 'Freedom Park 5537 Centerville RD, Williamsburg, Va', description: 'Come learn more about our initiative at the Juneteenth Freedom Fest, proudly hosted by the York James City Williamsburg NAACP! This event is a wonderful opportunity to connect with the community, celebrate freedom, and discover how Stand Up! For Yourself and Others empowers families and children to foster kindness, courage, and resilience. We look forward to seeing you there!'}
-      ]; 
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    document.addEventListener("DOMContentLoaded", async ()=>{
       const eventsContainer = document.getElementById('events-container');
       const upcomingButton = document.getElementById('upcoming');
       const pastButton = document.getElementById('past');
 
+      let allEvents = [];
+
+      //Load events from Firestore
+      async function loadEvents(){
+        allEvents = [];
+        const q = query(collection(db, "events"), orderBy("date", "asc"));
+        const querySnapshot = await getDocs(q);
+        querySnapshot.forEach((doc) => {
+          const eventData = doc.data();
+
+          const dateValue = eventData.date?.toDate ? eventData.date.toDate() : new Date(eventData.date);
+          allEvents.push({
+            id: doc.id,
+            title: eventData.title,
+            date: dateValue.toISOString().split('T')[0],
+            time: eventData.time,
+            location: eventData.location,
+            description: eventData.description
+          });
+        });
+      }
+
       function displayEvents(events){
         eventsContainer.innerHTML = '';
+
+        if (events.length === 0) {
+          eventsContainer.innerHTML = '<p>No events to display.</p>';
+          return;
+        }
+        
         events.forEach(event => {
           const eventDiv = document.createElement('div');
           eventDiv.classList.add('event');
@@ -96,11 +118,16 @@
         });
       }
       upcomingButton.addEventListener('click', () => {
+        const now = new Date();
+        const upcomingEvents = allEvents.filter(event => new Date(event.date) >= now);
         displayEvents(upcomingEvents);
       });
       pastButton.addEventListener('click', () => {
+        const now = new Date();
+        const pastEvents = allEvents.filter(event => new Date(event.date) < now);
         displayEvents(pastEvents);
       });
+      await loadEvents();
     })
   </script>
   </html>
