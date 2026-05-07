@@ -44,7 +44,25 @@
             </select><br>
             <button type="submit">Submit</button>
         </form>
-        <button id="toggle-pic-form">Add New Picture</button>
+        <button id="toggle-book-form">Add Book</button>
+        <form id="book-form" style="display: none;">
+            <h1>Add a book to the catalog</h1>
+            <input type="text" id="book-title" placeholder="Book Title" required><br>
+            <select id="grade-level" required>
+                <option value="preschool">Preschool</option>
+                <option value="primary">Primary Grades</option>
+                <option value="upper-elementary">Upper Elementary</option>
+                <option value="middle-school">Middle School</option>
+                <option value="high-school">High School</option>
+            </select><br>
+            <select id="language" required>
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+            </select><br>
+            <input type="text" id="author" placeholder="Author" required><br>
+            <input type="text" id="description" placeholder="Description"><br>
+            <button type="submit">Submit</button>
+        </form>
     </div>
 </body>
 <footer class="footer">
@@ -63,7 +81,9 @@
 <script>
     // Script to toggle event form visibility
     const toggleEventFormButton = document.getElementById('toggle-event-form');
+    const toggleBookFormButton = document.getElementById('toggle-book-form');
     const eventForm = document.getElementById('event-form');
+    const bookForm = document.getElementById('book-form');
 
     toggleEventFormButton.addEventListener('click', () => {
         if (eventForm.style.display === 'none' || eventForm.style.display === '') {
@@ -72,6 +92,16 @@
         } else {
             eventForm.style.display = 'none';
             toggleEventFormButton.textContent = 'Add New Event';
+        }
+    });
+
+    toggleBookFormButton.addEventListener('click', () => {
+        if (bookForm.style.display === 'none' || bookForm.style.display === '') {
+            bookForm.style.display = 'block';
+            toggleBookFormButton.textContent = 'Close Form';
+        } else {
+            bookForm.style.display = 'none';
+            toggleBookFormButton.textContent = 'Add Book';
         }
     });
 </script>

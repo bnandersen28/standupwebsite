@@ -30,6 +30,28 @@ document.getElementById("event-form").addEventListener("submit", async (e) => {
   }
 });
 
+document.getElementById("book-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  
+  const book = {
+    title: document.getElementById("book-title").value,
+    gradeLevel: document.getElementById("grade-level").value,
+    language: document.getElementById("language").value,
+    author: document.getElementById("author").value,
+    description: document.getElementById("description").value,
+    createdAt: serverTimestamp()
+  };
+
+  try {
+    await addDoc(collection(db, "books"), book);
+    alert("Book added!");
+    e.target.reset();
+  } catch (err) {
+    console.error("Error adding book:", err);
+    alert("Failed to add book");
+  }
+});
+
 onAuthStateChanged(auth, (user) => {
     if(user) {
         console.log("User is signed in", user.email);
